@@ -15,7 +15,7 @@ export default function App() {
       style:
         "https://api.olamaps.io/tiles/vector/v1/styles/default-light-standard/style.json",
       transformRequest: (url, resourceType) => {
-        url = "https://api.olamaps.io/tiles/vector/v1/styles/default-light-standard/style.jsonhttps://api.olamaps.io/tiles/vector/v1/styles/default-light-standard/style.json?api_key=X3yZLYMiuLzqbSIxvprAbOyMCqyU4q17zQYtS6Gi";
+        url = `https://api.olamaps.io/tiles/vector/v1/styles/default-light-standard/style.jsonhttps://api.olamaps.io/tiles/vector/v1/styles/default-light-standard/style.json?api_key=${process.env.API_KEY}`;
         return {url, resourceType };
       },
     });
